@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>3D BRICKS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://kit.fontawesome.com/ee9b8ea5b6.js" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <h2>Multi level dropdown menu in Bootstrap 3</h2>
+    <hr>
+    <div class="dropdown">
+      <a id="dLabel" role="button" data-toggle="dropdown" class="btn btn-primary" data-target="#" href="#">
+                Dropdown <span class="caret"></span>
+            </a>
+      <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+        <li><a href="#">Some action</a></li>
+        <li><a href="#">Some other action</a></li>
+        <li class="divider"></li>
+        <li class="dropdown-submenu">
+          <a tabindex="-1" href="#">Hover me for more options</a>
+          <ul class="dropdown-menu">
+            <li><a tabindex="-1" href="#">Second level</a></li>
+            <li class="dropdown-submenu">
+              <a href="#">Even More..</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">3rd level</a></li>
+                <li><a href="#">3rd level</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Second level</a></li>
+            <li><a href="#">Second level</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

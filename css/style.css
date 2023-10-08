@@ -1,0 +1,141 @@
+/*Tamaño de los iconos dentro del modelo de caja en la pagina principal "3dbricks.html"*/
+
+.icon{
+    width: 25%;
+}
+
+/* Estilo para el section de el index "3dbricks.html" */
+
+#seccion{
+    margin-top: 48px;
+    margin-bottom: 48px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* para dar tamaño, margen y centrar los articulos dentro del modelo de caja */
+
+.articles{
+    margin: 1%;
+    width: 48%;
+    float: left;
+    text-align: center;
+}
+
+/* para centrar el texto de la sección "sobre nosotros" */
+
+.centert{
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+}
+
+/* Estilo para el id "nosotros" para dar color y tamaño al <div> */
+
+#nosotros{
+    width: 100%;
+    background-color: #201d45;
+    height: 500px;
+}
+
+/* Estilo del texto dentro del div con id "nosotros" */
+
+.pargraph{
+    margin-right: 20%;
+    margin-left: 20%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Estilo para los Asides con una imagen, para que estos abarquen la mitad de la pagina */
+
+.halfloat{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+/* Relleno propio para los section de la pagina "sobre nosotros" */
+
+#secnosotros{
+    padding: 5%;
+}
+
+/* tamaño de texto para los parrafos dentro de la pagina "sobrenosotros.html" */
+.textus{
+    font-size: 30px;
+}
+
+/* para centrar la información de mision y vision en la pagina "sobrenosotros.html" */
+.center{
+    padding-top: 20%;
+    text-align: center;
+}
+
+/* ------- estilos de las listas para la barra de navegación ------- */
+
+li{
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 20px;
+}
+
+ul, ol {
+    list-style:none;
+}
+
+.nav > li {
+    float:left;
+}
+
+.nav li a {
+    background-color:#212529;
+    color:#FFC107;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+    border: 1px solid #FFC107;
+    border-radius: 10px;
+}
+
+.nav li a:hover {
+    background-color:#FFC107;
+    color:#212529;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+    z-index: 2;
+}
+
+.nav li ul li ul {
+    right: -120px;
+    top:10px;
+    z-index: 2;
+}
+
+/*-- Estilos para el color del texto y los SVGs del footer --*/
+
+svg
+{
+    fill: #FFC107;
+}
+
+.warcol{
+    color: #FFC107;
+}
+
+.articlecenter{
+    padding-top: 20%;
+    font-size: 25px;
+}
