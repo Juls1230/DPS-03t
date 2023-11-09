@@ -50,11 +50,91 @@
 
 /* Estilo para los Asides con una imagen, para que estos abarquen la mitad de la pagina */
 
-.halfloat{
-    float: left;
-    width: 50%;
-    height: 100%;
+.columnas{
+    flex-direction: column;
 }
+.imgcompra{
+    width: 20%;
+}
+
+@media (max-width: 992px) { 
+    .columnflex{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 992px) { 
+    .columnflex{
+        display: flex;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 992px) { 
+    .halfloat{
+        float: left;
+        width: 100%;
+        height: 100%;
+    }
+    #root{
+        width: 60%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+    .cart-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: white;
+        border-bottom: 1px solid #aaa;
+        border-radius: 3px;
+        margin: 10px 10px;
+    }
+    #compras{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 10px;
+    }
+}
+
+@media (min-width: 992px) { 
+    .halfloat{
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+    #root{
+        width: 60%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    .cart-item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: white;
+        border-bottom: 1px solid #aaa;
+        border-radius: 3px;
+        margin: 10px 10px;
+    }
+    #compras{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 10px;
+    }
+}
+
+
 
 /* Relleno propio para los section de la pagina "sobre nosotros" */
 
@@ -63,13 +143,31 @@
 }
 
 /* tamaño de texto para los parrafos dentro de la pagina "sobrenosotros.html" */
-.textus{
-    font-size: 30px;
-}
+
+@media (min-width: 992px) and (max-width: 1250px) {
+    .textus{
+        font-size: 20px;
+    }
+ }
+@media (min-width: 1250px) and (max-width: 1480px) {
+    .textus{
+        font-size: 25px;
+    }
+ }
+ @media (min-width: 1480px) {
+    .textus{
+        font-size: 30px;
+    }
+ }
+
+ @media (max-width: 992px) {
+    .textus{
+        font-size: 18px;
+    }
+ }
 
 /* para centrar la información de mision y vision en la pagina "sobrenosotros.html" */
 .center{
-    padding-top: 20%;
     text-align: center;
 }
 
@@ -135,7 +233,279 @@ svg
     color: #FFC107;
 }
 
-.articlecenter{
-    padding-top: 20%;
-    font-size: 25px;
+@media (min-width: 992px) and (max-width: 1480px) { 
+    .articlecenter{
+        padding-top: 10%;
+        font-size: 15px;
+    }
+ }
+
+ @media (min-width: 1480px) { 
+    .articlecenter{
+        padding-top: 10%;
+        font-size: 25px;
+    }
+
+ }
+ 
+
+ @media (min-width: 992px) and (max-width: 1480px) { 
+    .creador{
+        margin: 1%;
+        width: 18%;
+        float: left;
+        text-align: center;
+    }
+    .creadorcen{
+        font-size: 18px;
+    }
+    .icono{
+        width: 25%;
+    }
+
+ }
+
+ @media (min-width: 1480px) { 
+    .creador{
+        margin: 1%;
+        width: 18%;
+        float: left;
+        text-align: center;
+    }
+    .creadorcen{
+        font-size: 20px;
+    }
+    .icono{
+        width: 25%;
+    }
+ }
+
+ @media (max-width: 992px) { 
+    .creador{
+        margin: 1%;
+        width: 100%;
+        float: left;
+        text-align: center;
+    }
+    .creadorcen{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .icono
+    {
+        width: 10%;
+    }
+
+ }
+
+ /*************************************************/
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.header{
+    height: 80px;
+    width: 70%;
+    background-color: goldenrod;
+    border-radius: 3px;
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.header .logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 3px;
+    width: 80px;
+}
+.fa-solid{
+    color: goldenrod;
+}
+.cart p{
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    background-color: goldenrod;
+    color: white;
+}
+.container{
+    display: flex;
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+.sidebar{
+    width: 40%;
+    border-radius: 5px;
+    background-color: #eee;
+    margin-left: 20px;
+    padding: 15px;
+    text-align: center;
+}
+.head{
+    background-color: goldenrod;
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid #333;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    padding: 15px;
+}
+.img-box{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.images{
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: cover;
+    object-position: center;
+}
+.bottom{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;
+}
+h2{
+    font-size: 20px;
+    color: red;
+}
+.catbutton{
+    width: 100%;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: goldenrod;
+    padding: 7px 25px;
+    cursor: pointer;
+    color: white;
+}
+.catbutton:hover{
+    background-color: #333;
+}
+.paginbutton
+{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background-color: goldenrod;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.paginbutton:hover
+{
+    background-color: #333;
+}
+
+.row-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid goldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rowimg{
+    max-width: 43px;
+    max-height: 43px;
+    border-radius: 50%;
+}
+.fa-trash:hover{
+    cursor: pointer;
+    color: #333;
+}
+.buybutton{
+    width: 100%;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: #5cb85c;
+    padding: 7px 25px;
+    cursor: pointer;
+    color: white;
+}
+.buybutton:hover{
+    width: 100%;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: #286928;
+    padding: 7px 25px;
+    cursor: pointer;
+    color: white;
+}
+
+input{
+    background-color: #292b2c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90%;
+}
+
+.contactoss
+{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.centervert
+{
+    margin-top: 25%;
 }
